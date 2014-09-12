@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@id/menu_back"
+        android:icon="@drawable/menu_back"
+        android:title="@string/btn_back_mouse_watch"/>
+    <item
+        android:id="@id/menu_remove"
+        android:icon="@drawable/menu_remove"
+        android:title="@string/d2e_delete"/>
+
+</menu>

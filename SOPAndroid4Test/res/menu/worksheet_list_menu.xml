@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@id/menu_back"
+        android:icon="@drawable/menu_back"
+        android:title="@string/btn_back_data_coll_fun"/>
+    <item
+        android:id="@id/menu_sms"
+        android:icon="@drawable/menu_sms"
+        android:title="@string/msg_menu"/>
+    <!-- <item android:id="@id/menu_email" android:title="邮件" android:icon="@drawable/menu_email" /> -->
+
+</menu>

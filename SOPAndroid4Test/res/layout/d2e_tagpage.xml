@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical"
+    android:paddingLeft="15dip"
+    android:paddingRight="15dip" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1" >
+
+        <TableRow>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/text_content_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dip"
+                        android:layout_marginRight="15.0dip"
+                        android:layout_marginTop="1.0dip"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="7.0dip"
+                        android:text="@string/tv_place_data_cust_name"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@id/tagpage_custom"
+                        style="@style/text_content_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dip"
+                        android:layout_marginRight="15.0dip"
+                        android:layout_marginTop="1.0dip"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="7.0dip"
+                        android:text="可口可乐公司"
+                        android:textColor="#ffffff" />
+                    <!--
+			    <EditText  
+			      android:id="@id/tagpage_custom"
+			      android:editable="false"
+			      android:focusable="false"
+			      android:layout_width="match_parent" 
+			      android:layout_height="35dip" 
+			      android:layout_marginTop="15.0dip" 
+			      style="@style/loginpage_EditText"
+			      android:background="@drawable/sop_edit_login"
+			      android:layout_marginBottom="15.0dip" />
+                    -->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/text_content_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dip"
+                        android:layout_alignRight="@id/tagpage_custom"
+                        android:layout_marginRight="15.0dip"
+                        android:layout_marginTop="1.0dip"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="7.0dip"
+                        android:text="@string/tv_customer_type"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@id/tagpage_stype"
+                        style="@style/text_content_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dip"
+                        android:layout_marginRight="15.0dip"
+                        android:layout_marginTop="1.0dip"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="7.0dip"
+                        android:text="0001"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView
+                android:id="@id/tagepage_custom_logo"
+                android:layout_width="75dip"
+                android:layout_height="75dip"
+                android:padding="3dip"
+                android:src="@drawable/background" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/text_content_white"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="1.0dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="7.0dip"
+            android:text="@string/tv_constr_num"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@id/tagpage_serial"
+            style="@style/text_content_white"
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="1.0dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="7.0dip"
+            android:text="0001"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/text_content_white"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_alignRight="@id/tagpage_custom"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="1.0dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="7.0dip"
+            android:text="@string/tv_constr_workers"
+            android:textColor="#ffffff" 
+            />
+
+        <TextView
+            android:id="@id/tagpage_person"
+            style="@style/text_content_white"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="1.0dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="7.0dip"
+            android:singleLine="true"
+            android:text="5人"
+            android:textColor="#ffffff" 
+            />
+
+        <Button
+            android:id="@id/btn_checkin"
+            android:layout_width="wrap_content"
+            android:layout_height="35.0dip"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="@string/doing_check"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/text_content_white"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_alignRight="@id/tagpage_custom"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="1.0dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="7.0dip"
+            android:text="@string/d2e_check_memo"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@id/tagpage_memo"
+            style="@style/text_content_white"
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="1.0dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="7.0dip"
+            android:text="0001"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@id/public_title"
+        style="@style/text_content_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1.0dip"
+        android:gravity="center_vertical"
+        android:minHeight="40.0px"
+        android:paddingLeft="7.0dip"
+        android:paddingRight="7.0dip"
+        android:singleLine="true"
+        android:text="@string/position_card"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:layout_marginTop="1dip"
+            layout="@layout/public_gridview" />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@id/public_information"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:visibility="invisible" >
+			<!-- 
+            <TextView
+                style="@style/text_content_white"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="1.0dip"
+                android:gravity="center_horizontal|center_vertical"
+                android:minHeight="40.0px"
+                android:paddingLeft="7.0dip"
+                android:paddingRight="7.0dip"
+                android:text="@string/work_finish"
+                android:textColor="#DC143C"
+                android:textSize="20sp" />
+			 -->
+            <ImageView
+                android:id="@+id/smile_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:paddingTop="5dp"
+                android:src="@drawable/smiling" />
+            <!--  
+            <Button 
+                android:id="@+id/btn_submit_job"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/check_in_sub"
+                />
+                -->
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

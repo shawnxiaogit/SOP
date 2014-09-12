@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:orientation="vertical" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+  	>
+    <!--  android:background="#f1f6fc" -->
+    <ImageView android:textSize="10.0sp" 
+        android:id="@id/txt_iconView" 
+        android:padding="6.0dip" 
+        android:layout_width="60.0dip" 
+        android:layout_height="60.0dip" 
+        android:layout_marginLeft="5.0dip" 
+        android:layout_marginRight="10.0dip" 
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon"
+        android:layout_alignParentLeft="true" 
+        android:layout_alignParentBottom="true" />
+    <TextView android:id="@id/txt_stateView" 
+        android:layout_width="wrap_content" 
+        android:layout_height="60.0dip" 
+        android:padding="6.0dip"
+        android:layout_alignParentRight="true" 
+        android:layout_alignParentBottom="true" 
+        android:text="下载"
+        style="@style/AppItem.StateView" />
+    <RelativeLayout 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_toLeftOf="@id/txt_stateView" 
+        android:layout_toRightOf="@id/txt_iconView" 
+        android:layout_alignTop="@id/txt_iconView"
+        android:layout_alignBottom="@id/txt_iconView"
+        android:padding="6.0dip">
+        <!--  android:layout_marginTop="15.0dip" 
+        android:layout_marginBottom="2.0dip"  -->
+        <TextView android:ellipsize="marquee" 
+            android:id="@id/txt_titleLabel" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:singleLine="true" 
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" 
+            android:marqueeRepeatLimit="marquee_forever" 
+            android:text="1"
+            style="@style/AppItem.Name" />
+        <TextView android:id="@id/txt_dateLabel" 
+            android:singleLine="true" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_below="@id/txt_titleLabel" 
+            android:layout_alignParentLeft="true" 
+            android:text="3"
+            style="@style/AppItem.Name" />
+    </RelativeLayout>
+</RelativeLayout>

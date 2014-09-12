@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical"
+    android:paddingLeft="15dip"
+    android:paddingRight="15dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/text_content_white"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_alignRight="@id/tagpage_custom"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="15.0dip"
+            android:paddingLeft="7.0dip"
+            android:text="@string/tv_place_data_cust_name"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@id/tagpage_custom"
+            style="@style/text_content_white"
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="15.0dip"
+            android:paddingLeft="7.0dip"
+            android:text=""
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/text_content_white"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_alignRight="@id/tagpage_position"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="15.0dip"
+            android:paddingLeft="7.0dip"
+            android:text="@string/position_card"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@id/tagpage_position"
+            style="@style/text_content_white"
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="15.0dip"
+            android:paddingLeft="7.0dip"
+            android:text=""
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@id/public_title"
+        style="@style/text_content_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15.0dip"
+        android:gravity="center_vertical"
+        android:minHeight="40.0px"
+        android:paddingLeft="7.0dip"
+        android:paddingRight="7.0dip"
+        android:singleLine="true"
+        android:text="@string/check_point"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:layout_marginTop="1dip"
+        layout="@layout/public_gridview" />
+
+</LinearLayout>

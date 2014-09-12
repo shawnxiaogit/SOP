@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical"
+    android:layout_weight="1.0"
+    android:background="@drawable/login_bg"
+    android:scrollbarThumbVertical="@drawable/trans" >
+
+    <RelativeLayout
+        android:id="@+id/panel_sum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/panel_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip" >
+
+            <!-- 客户名称 -->
+
+            <RelativeLayout
+                android:id="@id/panel_place_data_cust_name"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/public_line_top" >
+
+                <TextView
+                    android:id="@id/tv_place_data_cust_name"
+                    style="@style/place_data_coll_tv_style"
+                    android:layout_width="160.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_place_data_cust_name" />
+
+                <AutoCompleteTextView
+                    android:id="@id/et_place_data_cust_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_place_data_cust_name"
+                    style="@style/place_data_coll_et_client_style"
+                    />
+                <ImageButton 
+                    android:id="@+id/ib_place_data_cust_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/more_select"
+                    android:layout_alignRight="@id/et_place_data_cust_name"
+                    />
+            </RelativeLayout>
+
+            <!-- 勘查现场日期 -->
+
+            <RelativeLayout
+                android:id="@id/panel_place_data_coll_date"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_below="@id/panel_place_data_cust_name"
+                android:background="@drawable/public_line_mid" >
+
+                <TextView
+                    android:id="@id/tv_place_data_coll_date"
+                    style="@style/place_data_coll_tv_style"
+                    android:layout_width="160.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_place_data_coll_date" />
+
+                <EditText
+                    android:id="@id/et_place_data_coll_date"
+                    style="@style/place_data_coll_et_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_place_data_coll_date"
+                    android:paddingRight="40.0dip" />
+            </RelativeLayout>
+
+            <!-- 勘查人员 -->
+
+            <RelativeLayout
+                android:id="@id/panel_place_data_coll_people"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_below="@id/panel_place_data_coll_date"
+                android:background="@drawable/public_line_mid" >
+
+                <TextView
+                    android:id="@id/tv_place_data_coll_people"
+                    style="@style/place_data_coll_tv_style"
+                    android:layout_width="160.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_place_data_coll_people" 
+                    />
+
+                <EditText
+                    android:id="@id/et_place_data_coll_people"
+                    style="@style/place_data_coll_et_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/et_place_data_coll_date"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_place_data_coll_people" 
+                    />
+            </RelativeLayout>
+
+            <!-- 勘查客户联系人 -->
+
+            <RelativeLayout
+                android:id="@id/panel_place_data_coll_conn"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_below="@id/panel_place_data_coll_people"
+                android:background="@drawable/public_line_mid" >
+
+                <TextView
+                    android:id="@id/tv_place_data_coll_conn"
+                    style="@style/place_data_coll_tv_style"
+                    android:layout_width="160.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_place_data_coll_conn" />
+
+                <EditText
+                    android:id="@id/et_place_data_coll_conn"
+                    style="@style/place_data_coll_et_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_place_data_coll_conn"
+                    android:paddingRight="55.0dip" />
+            </RelativeLayout>
+
+            <!-- 勘查现场地址 -->
+
+            <RelativeLayout
+                android:id="@id/panel_place_data_coll_addr"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_below="@id/panel_place_data_coll_conn"
+                android:background="@drawable/public_line_mid" >
+
+                <TextView
+                    android:id="@id/tv_place_data_coll_addr"
+                    style="@style/place_data_coll_tv_style"
+                    android:layout_width="160.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_place_data_coll_addr" />
+
+                <EditText
+                    android:id="@id/et_place_data_coll_addr"
+                    style="@style/place_data_coll_et_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_place_data_coll_addr"
+                    android:paddingRight="40.0dip" />
+            </RelativeLayout>
+
+            <!-- 客户方陪同人员 -->
+
+            <RelativeLayout
+                android:id="@id/panel_place_data_coll_peitong"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_below="@id/panel_place_data_coll_addr"
+                android:background="@drawable/public_line_bottom" >
+
+                <TextView
+                    android:id="@id/tv_place_data_coll_peitong"
+                    style="@style/place_data_coll_tv_style"
+                    android:layout_width="160.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_place_data_coll_peitong" />
+
+                <EditText
+                    android:id="@id/et_place_data_coll_peitong"
+                    style="@style/place_data_coll_et_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_place_data_coll_peitong"
+                    android:paddingRight="55.0dip" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!-- 勘查类型功能选择容器 -->
+
+        <LinearLayout
+            android:id="@+id/panel_two"
+            android:layout_below="@+id/panel_first"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:orientation="vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip" >
+
+            <!-- 鼠类勘查 -->
+
+            <RelativeLayout
+                android:id="@id/panel_mouse_watch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/public_line_top"
+                android:clickable="true"
+                android:focusable="true"
+                android:imeOptions="actionNext"
+                android:paddingBottom="8.0dip"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingTop="8.0dip" >
+
+                <TextView
+                    android:id="@id/tv_mouse_watch"
+                    style="@style/place_data_coll_tv_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="0.0dip"
+                    android:layout_toRightOf="@id/panel_mouse_watch"
+                    android:text="@string/tv_mouse_watch" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/date_more_arrow" />
+            </RelativeLayout>
+
+            <!-- 蟑螂勘查 -->
+
+            <RelativeLayout
+                android:id="@id/panel_cockroach_watch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/public_line_mid"
+                android:clickable="true"
+                android:focusable="true"
+                android:imeOptions="actionNext"
+                android:paddingBottom="8.0dip"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingTop="8.0dip" >
+
+                <TextView
+                    android:id="@id/tv_cockroach_watch"
+                    style="@style/place_data_coll_tv_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="0.0dip"
+                    android:layout_toRightOf="@id/panel_cockroach_watch"
+                    android:text="@string/tv_cockroach_watch" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/date_more_arrow" />
+            </RelativeLayout>
+
+            <!-- 飞虫勘查 -->
+
+            <RelativeLayout
+                android:id="@id/panel_fly_insect_watch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/public_line_mid"
+                android:clickable="true"
+                android:focusable="true"
+                android:imeOptions="actionNext"
+                android:paddingBottom="8.0dip"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingTop="8.0dip" >
+
+                <TextView
+                    android:id="@id/tv_fly_insect_watch"
+                    style="@style/place_data_coll_tv_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="0.0dip"
+                    android:layout_toRightOf="@id/panel_fly_insect_watch"
+                    android:text="@string/tv_fly_insect_watch" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/date_more_arrow" />
+            </RelativeLayout>
+
+            <!-- 现场勘查发现的其他虫害 -->
+
+            <RelativeLayout
+                android:id="@id/panel_other_insect_watch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/public_line_mid"
+                android:clickable="true"
+                android:focusable="true"
+                android:imeOptions="actionNext"
+                android:paddingBottom="8.0dip"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingTop="8.0dip" >
+
+                <TextView
+                    android:id="@id/tv_other_insect_watch"
+                    style="@style/place_data_coll_tv_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="0.0dip"
+                    android:layout_toRightOf="@id/panel_other_insect_watch"
+                    android:text="@string/tv_other_insect_watch" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/date_more_arrow" />
+            </RelativeLayout>
+
+            <!-- 重点区域勘查结果 -->
+
+            <RelativeLayout
+                android:id="@id/panel_watch_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/public_line_bottom"
+                android:clickable="true"
+                android:focusable="true"
+                android:imeOptions="actionNext"
+                android:paddingBottom="8.0dip"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingTop="8.0dip" >
+
+                <TextView
+                    android:id="@id/tv_watch_result"
+                    style="@style/place_data_coll_tv_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="0.0dip"
+                    android:layout_toRightOf="@id/panel_watch_result"
+                    android:text="@string/tv_watch_result" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/date_more_arrow" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!-- 提交反馈按钮容器 -->
+
+        <LinearLayout
+            android:layout_below="@+id/panel_two"
+            android:layout_alignParentBottom="true"
+            android:id="@id/panel_data_coll_fun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4.0dip"
+            android:layout_marginTop="10.0dp"
+            android:gravity="center" 
+            android:paddingBottom="20.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            >
+
+            <Button
+                android:id="@id/btn_submit_data_coll_fun"
+                android:layout_width="match_parent"
+                android:layout_height="40.0dip"
+                android:layout_weight="1"
+                android:background="@drawable/blue_public_line"
+                android:text="@string/btn_submit_data_coll_fun"
+				style="@style/place_data_coll_btn_text_style"
+				android:layout_marginRight="2.0dip"
+                />
+			<!-- 
+            <Button
+                android:id="@id/btn_reset_data_coll_fun"
+                android:layout_width="match_parent"
+                android:layout_height="40.0dip"
+                android:layout_weight="1"
+                android:background="@drawable/btn_add"
+                style="@style/place_data_coll_btn_text_style"
+                android:text="@string/btn_reset_data_coll_fun"
+                />
+			 -->
+            <Button
+                android:layout_marginLeft="2.0dip"
+                android:id="@id/btn_back_data_coll_fun"
+                android:layout_width="match_parent"
+                android:layout_height="40.0dip"
+                android:layout_weight="1"
+                android:background="@drawable/blue_public_line"
+                android:text="@string/btn_back_data_coll_fun"
+                style="@style/place_data_coll_btn_text_style"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

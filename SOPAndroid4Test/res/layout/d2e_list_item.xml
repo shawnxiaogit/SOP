@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" 
+    android:paddingLeft="0.0px" 
+    android:paddingTop="0.0px" 
+    android:paddingRight="0.0px" 
+    android:paddingBottom="0.0px" 
+    android:layout_width="fill_parent" 
+    android:layout_height="35.0dip"
+    android:gravity="center_vertical"
+    >
+    
+    <TextView 
+        android:layout_gravity="center_vertical" 
+        android:id="@id/msg_text" 
+        android:layout_width="fill_parent" 
+        android:layout_height="35.0dip" 
+        android:layout_marginLeft="4.0dip" 
+        android:editable="false" 
+        style="@style/text_content"
+        android:inputType="none" 
+        />
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@id/comment_panel_choseclient"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <AutoCompleteTextView
+                android:id="@id/comment_ckpoint_state"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:background="@drawable/sop_edit_login"
+                android:paddingLeft="90.0dip"
+                android:text="无" 
+                />
+
+            <Button
+                android:id="@id/comment_loginImageButton02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/comment_ckpoint_state"
+                android:layout_alignRight="@id/comment_ckpoint_state"
+                android:layout_alignTop="@id/comment_ckpoint_state"
+                android:layout_marginRight="1.0dip"
+                android:background="@drawable/more_select" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dip"
+                android:layout_alignBottom="@id/comment_ckpoint_state"
+                android:layout_alignLeft="@id/comment_ckpoint_state"
+                android:layout_alignTop="@id/comment_ckpoint_state"
+                android:gravity="center_vertical"
+                android:paddingLeft="7.0dip"
+                android:text="@string/cutomer_name"
+                android:textColor="#000000" />
+        </RelativeLayout>
+
+        <com.mobilercn.widget.YTEditText
+            android:id="@id/report_memo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:capitalize="sentences"
+            android:gravity="top"
+            android:lineSpacingExtra="5.0dp"
+            android:maxLines="45"
+            android:minHeight="450dp"
+            android:paddingBottom="0.0dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="vertical"
+            android:textColor="#ff000000"
+            android:textSize="16sp"
+            android:typeface="sans" />
+    </LinearLayout>
+
+</FrameLayout>

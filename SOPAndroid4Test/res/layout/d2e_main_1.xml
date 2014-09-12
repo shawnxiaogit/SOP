@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20.0dip"
+        android:scrollbarThumbVertical="@drawable/trans" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@id/main_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/mainscreen_msg" >
+				<!--  
+                <TextView
+                    android:id="@id/LabelTextView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="70.0dip"
+                    android:gravity="left"
+                    android:textColor="#ffffff"
+                    android:textSize="22.0dip"
+                    android:textStyle="bold" 
+                    android:text="@string/message_title"
+                    />
+                    -->
+                <ImageButton 
+                    android:id="@+id/ib_main_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/msg_main_btn"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/main_sop"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/mainscreen_sop" >
+				<!-- 
+                <TextView
+                    android:id="@id/LabelTextView2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="70.0dip"
+                    android:gravity="left"
+                    android:textColor="#ffffff"
+                    android:textSize="22.0dip"
+                    android:textStyle="bold" 
+                    android:text="@string/menu_sop"
+                    />
+                   	 -->                <ImageButton 
+                    android:id="@+id/ib_main_sop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/sop_main_btn"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/main_worksheet"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/mainscreen_worksheet" >
+				<!-- 
+                <TextView
+                    android:id="@id/LabelTextView3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="70.0dip"
+                    android:gravity="left"
+                    android:textColor="#ffffff"
+                    android:textSize="22.0dip"
+                    android:textStyle="bold" 
+                    android:text="@string/menu_worksheet"
+                    />					 -->
+                <ImageButton 
+                    android:id="@+id/ib_main_work_sheet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/work_sheet_main_btn"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/main_report"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/mainscreen_report" >
+				<!-- 
+                <TextView
+                    android:id="@id/LabelTextView4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="70.0dip"
+                    android:gravity="left"
+                    android:textColor="#ffffff"
+                    android:textSize="22.0dip"
+                    android:textStyle="bold" 
+                    android:text="@string/menu_report"
+                    />
+                     -->
+                <ImageButton 
+                    android:id="@+id/ib_main_report"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/report_main_btn"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/main_exit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/mainscreen_exit" >
+				<!-- 
+                <TextView
+                    android:id="@id/LabelTextView6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="70.0dip"
+                    android:gravity="left"
+                    android:textColor="#ffffff"
+                    android:textSize="22.0dip"
+                    android:textStyle="bold" 
+                    android:text="@string/menu_kantan"
+                    />
+                     -->
+                <ImageButton 
+                    android:id="@+id/ib_main_watch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/watch_main_btn"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/main_support"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/mainscreen_support" >
+				<!-- 
+                <TextView
+                    android:id="@id/LabelTextView5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="70.0dip"
+                    android:gravity="left"
+                    android:textColor="#ffffff"
+                    android:textSize="22.0dip"
+                    android:textStyle="bold" 
+                    android:text="@string/menu_support"
+                    />				 -->
+                <ImageButton 
+                    android:id="@+id/ib_main_support"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/support_main_btn"
+                    />
+            </RelativeLayout>
+
+            <!-- 放入一个log -->
+
+            <ImageView
+                android:id="@+id/main_logo"
+                android:layout_width="210.0dip"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="50.0dip"
+                android:layout_marginTop="40.0dip"
+                android:src="@drawable/vis_logo" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

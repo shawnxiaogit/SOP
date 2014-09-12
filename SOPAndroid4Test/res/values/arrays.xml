@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="equips">
+        <item>@string/check_equip_mouse_bait_station</item> <!-- 0 -->
+        <item>@string/check_equip_mouse_glue_board</item> <!-- 1 -->
+        <item>@string/check_equip_rodent_trap</item> <!-- 2 -->
+        <item>@string/check_equip_mouse_trap</item> <!-- 3 -->
+        <item>@string/check_equip_fly_catch</item> <!-- 4 -->
+        <item>@string/check_equip_insect_catch</item> <!-- 5 -->
+        <item>@string/check_equip_bug_catcher</item> <!-- 6 -->
+        <item>@string/check_equip_bug_glue_plate</item> <!-- 7 -->
+        <item>@string/check_equip_opsite</item> <!-- 8 -->
+        <item>@string/check_equip_monitor</item> <!-- 9 -->
+        <item>@string/check_equip_xjk</item> <!-- 10 -->
+        <item>@string/check_equip_survey</item> <!-- 11 -->
+        <item>@string/check_equip_facilities_other</item> <!-- 12 -->
+        <item>@string/check_equip_opsite_other</item> <!-- 13 -->
+    </string-array>
+    <string-array name="equips_type">
+        <item>BaitStation</item> <!-- 0 -->
+        <item>GlueBoard</item> <!-- 1 -->
+        <item>RodentTrap</item> <!-- 2 -->
+        <item>MouseTrap</item> <!-- 3 -->
+        <item>FlyCatch</item> <!-- 4 -->
+        <item>InsectCatch</item> <!-- 5 -->
+        <item>BugCatcher</item> <!-- 6 -->
+        <item>BugGluePlate</item> <!-- 7 -->
+        <item>OPSite</item> <!-- 8 -->
+        <item>Monitor</item> <!-- 9 -->
+        <item>XJK</item> <!-- 10 -->
+        <item>Survey</item> <!-- 11 -->
+        <item>FacilitiesOther</item> <!-- 12 -->
+        <item>OPSiteOther</item> <!-- 13 -->
+    </string-array>
+    <string-array name="bait"> <!-- 鼠类诱饵站 0 -->
+        <item>@string/no_feeding</item>
+        <item>@string/small_feeding</item>
+        <item>@string/feed_on_large</item>
+        <item>@string/add_replace_bait</item>
+        <item>@string/equip_loss</item>
+    </string-array>
+    <string-array name="sticky_mouse_board"> <!-- 粘鼠板 1 -->
+        <item>@string/no_rat_trac</item>
+        <item>@string/have_rat_trac</item>
+        <item>@string/catch_mouse</item>
+        <item>@string/equip_loss</item>
+    </string-array>
+    <string-array name="mousetrap"> <!-- 鼠笼  2 -->
+        <item>@string/catch_mouse</item>
+        <item>@string/equip_loss</item>
+        <item>@string/no_rat_trac</item>
+    </string-array>
+    <string-array name="mouse_trap"> <!-- 鼠夹 3 -->
+        <item>@string/free_of_capture</item>
+        <item>@string/catch_mouse</item>
+        <item>@string/equip_loss</item>
+    </string-array>
+    <string-array name="pests"> <!-- 灭虫灯  4 -->
+        <item>@string/free_of_capture</item>
+        <item>@string/small_capture</item>
+        <item>@string/large_capture</item>
+        <item>@string/equip_damage</item>
+    </string-array>
+    <string-array name="InsectCatch"> <!-- 捕蝇笼  5 -->
+        <item>@string/free_of_capture</item>
+        <item>@string/small_capture</item>
+        <item>@string/large_capture</item>
+        <item>@string/equip_damage</item>
+    </string-array>
+    <string-array name="bug_catch"> <!-- 昆虫捕捉器6 -->
+        <item>@string/free_of_capture</item>
+        <item>@string/small_capture</item>
+        <item>@string/large_capture</item>
+        <item>@string/equip_damage</item>
+    </string-array>
+    <string-array name="bugglueplate"> <!-- 粘虫板 7 -->
+        <item>@string/free_of_capture</item>
+        <item>@string/small_capture</item>
+        <item>@string/large_capture</item>
+        <item>@string/equip_damage</item>
+    </string-array>
+    <string-array name="xinjukang"> <!-- 白蚁诱饵站  10 -->
+        <item>@string/check_wooden_lure</item>
+        <item>@string/replace_wooden_lure</item>
+        <item>@string/cast_bait</item>
+        <item>@string/check_bait</item>
+        <item>@string/replace_bait</item>
+        <item>@string/equip_loss</item>
+    </string-array>
+    <string-array name="facilities_other"><!-- 其他设施12 -->
+        <item>@string/homework_finish</item>
+    </string-array>
+    
+    <string-array name="opsite_other"><!-- 其他设施13 -->
+        <item>@string/homework_finish</item>
+    </string-array>
+    <string-array name="workstation"> <!-- 作业点 -->
+        <item>@string/cock_kill_bait</item>
+        <item>@string/ant_bait_agent</item>
+        <item>@string/fly_bait</item>
+        <item>@string/residual_spray</item>
+        <item>@string/low_spraying</item>
+        <item>@string/hot_smoke</item>
+    </string-array>
+    
+    <string-array name="mouse_kind"><!-- 现场勘察时发现的鼠类 -->
+        <item>@string/mus</item>
+        <item>@string/huang_xiong_shu</item>
+        <item>@string/rat_norvegicus</item>
+        <item>@string/has_nothing</item>
+    </string-array>
+    
+    <string-array name="mouse_other_state"><!-- 其他状态 -->
+        <item>@string/state_yes</item>
+        <item>@string/state_no</item>
+        <item>@string/state_not_involve</item>
+        <item>@string/state_remarks</item>
+    </string-array>
+	<string-array name="mouse_has_equip">
+	    <item>@string/state_have</item>
+	    <item>@string/state_none</item>
+	    <item>@string/state_not_involve</item>
+	    <item>@string/state_remarks</item>
+	</string-array>    
+    <string-array name="cockroach_kind">
+        <item>@string/german_cock</item>
+        <item>@string/peri_ameri</item>
+        <item>@string/peri_austr</item>
+        <item>@string/state_none</item>
+    </string-array>
+    
+    <string-array name="fly_insect_kind">
+        <item>@string/kind_flies</item>
+        <item>@string/kind_mosquito</item>
+        <item>@string/kind_moth</item>
+        <item>@string/state_none</item>
+    </string-array>
+
+</resources>

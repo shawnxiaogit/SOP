@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_bg"
+    >
+    <RelativeLayout 
+        android:orientation="horizontal"
+        android:layout_width="fill_parent" 
+        android:layout_height="35dip" 
+        android:background="@drawable/calendar_title" 
+        android:layout_marginLeft="10.0dip" 
+        android:layout_marginTop="10.0dip" 
+        android:layout_marginRight="10.0dip">
+        <TextView 
+            android:id="@id/calendar_title_text"
+            android:layout_width="wrap_content" 
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:text="3月2011年"
+            android:layout_height="fill_parent" />
+        <Button android:layout_width="wrap_content" 
+            android:id="@id/calendar_arrow_pre"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/calendar_arrow_left"
+            android:layout_marginLeft="10dip"/>
+        <Button android:layout_width="wrap_content" 
+            android:id="@id/calendar_arrow_next"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/calendar_arrow_right"
+            android:layout_marginRight="10dip"/>
+    </RelativeLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    <com.mobilercn.sop.activity.view.WTMonthView
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginBottom="160dip"
+		android:background="#bfbfbf"
+		android:id="@id/monthview"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"/>
+    </LinearLayout>
+    
+</LinearLayout>

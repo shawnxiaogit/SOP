@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical"
+    android:layout_weight="1.0"
+    android:background="@drawable/login_bg"
+    android:scrollbarThumbVertical="@drawable/trans" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/panel_cockroach_watch_first"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip" >
+
+            <!-- 现场勘察时发现的蟑螂 -->
+
+            <RelativeLayout
+                android:id="@id/panel_cockroach_watch_kind"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/public_line_top" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_cockroach_watch_kind"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_cockroach_watch_kind" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_cockroach_watch_kind"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_cockroach_watch_kind" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_cockroach_watch_kind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_cockroach_watch_kind"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 室内水池、灶台、电器等区域有否蟑迹 1-->
+
+            <RelativeLayout
+                android:id="@id/panel_cockroach_watch_room_in_find"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_mid" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_cockroach_watch_room_in_find"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_cockroach_watch_room_in_find" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_cockroach_watch_room_in_find"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_cockroach_watch_room_in_find" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_cockroach_watch_room_in_find"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_cockroach_watch_room_in_find"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 室内食品、仓储区域是否密封 2-->
+
+            <RelativeLayout
+                android:id="@id/panel_cockroach_room_in_seal"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_mid" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_cockroach_room_in_seal"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_cockroach_room_in_seal" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_cockroach_room_in_seal"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_cockroach_room_in_seal" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_cockroach_room_in_seal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_cockroach_room_in_seal"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 室内各种管线、橱柜、家具有否蟑迹3 -->
+
+            <RelativeLayout
+                android:id="@id/panel_cockroach_room_in_furni_find"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_mid" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_cockroach_room_in_furni_find"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_cockroach_room_in_furni_find" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_cockroach_room_in_furni_find"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_cockroach_room_in_furni_find" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_cockroach_room_in_furni_find"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_cockroach_room_in_furni_find"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 近期室内有否发现过蟑螂 4-->
+
+            <RelativeLayout
+                android:id="@id/panel_cockroach_room_in_curr_find"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_mid" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_cockroach_room_in_curr_find"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_cockroach_room_in_curr_find" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_cockroach_room_in_curr_find"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_cockroach_room_in_curr_find" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_cockroach_room_in_curr_find"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_cockroach_room_in_curr_find"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 室内门窗、通道、墙壁缝隙是否符合防蟑螂要求 5-->
+
+            <RelativeLayout
+                android:id="@id/panel_cockroach_room_in_requ"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_mid" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_cockroach_room_in_requ"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_cockroach_room_in_requ" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_cockroach_room_in_requ"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_cockroach_room_in_requ" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_cockroach_room_in_requ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_cockroach_room_in_requ"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 环境保洁制度是否完善 6-->
+
+            <RelativeLayout
+                android:id="@id/panel_cockroach_watch_syst_perf"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_mid" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_cockroach_watch_syst_perf"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_cockroach_watch_syst_perf" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_cockroach_watch_syst_perf"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_cockroach_watch_syst_perf" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_cockroach_watch_syst_perf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_cockroach_watch_syst_perf"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 卫生设施是否符合防蟑螂的要求 7-->
+
+            <RelativeLayout
+                android:id="@id/panel_cockroach_watch_hygiene_requ"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_mid"
+                android:gravity="center_vertical" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_cockroach_watch_hygiene_requ"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_cockroach_watch_hygiene_requ" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_cockroach_watch_hygiene_requ"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_cockroach_watch_hygiene_requ" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_cockroach_watch_hygiene_requ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_cockroach_watch_hygiene_requ"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 客户方生产流程有否蟑螂入侵风险 8-->
+
+            <RelativeLayout
+                android:id="@id/panel_cockroach_watch_pipeline_risk"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_mid"
+                android:gravity="center_vertical" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_cockroach_watch_pipeline_risk"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_cockroach_watch_pipeline_risk" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_cockroach_watch_pipeline_risk"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_cockroach_watch_pipeline_risk" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_cockroach_watch_pipeline_risk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_cockroach_watch_pipeline_risk"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 客户方建筑及物品是否遭到蟑螂侵害 9-->
+
+            <RelativeLayout
+                android:id="@id/panel_cockroach_watch_things_be_breaked"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_mid"
+                android:gravity="center_vertical" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_cockroach_watch_things_be_breaked"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_cockroach_watch_things_be_breaked" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_cockroach_watch_things_be_breaked"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_cockroach_watch_things_be_breaked" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_cockroach_watch_things_be_breaked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_cockroach_watch_things_be_breaked"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 客户方有否蟑螂综合防制的理念 10-->
+
+            <RelativeLayout
+                android:id="@id/panel_cockroach_watch_prevention_think"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_bottom"
+                android:gravity="center_vertical" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_cockroach_watch_prevention_think"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_cockroach_watch_prevention_think" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_cockroach_watch_prevention_think"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_cockroach_watch_prevention_think" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_cockroach_watch_prevention_think"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_cockroach_watch_prevention_think"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/panel_cockroach_watch_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/panel_cockroach_watch_first"
+            android:layout_marginBottom="4.0dip"
+			android:paddingLeft="10.0dip"
+			android:paddingRight="10.0dip"
+            android:layout_marginTop="10.0dp"
+            android:gravity="center" 
+            android:paddingBottom="20.0dip"
+            >
+
+            <Button
+                android:id="@id/btn_save_cockroach_watch"
+                style="@style/place_data_coll_btn_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="40.0dip"
+                android:layout_marginRight="2.0dip"
+                android:layout_weight="1"
+                android:background="@drawable/blue_public_line"
+                android:text="@string/btn_save_cockroach_watch" />
+			<!-- 
+            <Button
+                android:id="@id/btn_reset_cockroach_watch"
+                style="@style/place_data_coll_btn_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="40.0dip"
+                android:layout_weight="1"
+                android:background="@drawable/btn_add" 
+                android:text="@string/btn_reset_cockroach_watch"
+                />
+			 -->
+            <Button
+                android:id="@id/btn_back_cockroach_watch"
+                style="@style/place_data_coll_btn_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="2.0dip"
+                android:layout_weight="1"
+                android:background="@drawable/blue_public_line"
+                android:text="@string/btn_back_cockroach_watch" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

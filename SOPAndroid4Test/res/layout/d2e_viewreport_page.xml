@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 表头 -->
+
+    <LinearLayout
+        android:id="@+id/report_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:padding="1.0dip"
+        >
+
+        <!-- 设施报表按钮 -->
+
+        <Button
+            android:id="@+id/btn_sheshi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1" 
+            android:background="@drawable/oper_click"
+            />
+        <!-- 实施报表按钮 -->
+
+        <Button
+            android:id="@+id/btn_shishi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/moni_no_clik"
+            />
+        <!-- 其他报表按钮 -->
+		<!-- 
+        <Button
+            android:id="@+id/btn_qita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/other" 
+            android:layout_weight="1"
+            android:background="@drawable/tab_normal"
+            />
+          -->
+    </LinearLayout>
+    <!-- 设施报表 -->
+
+    <RelativeLayout
+        android:id="@+id/panel_report_sheshi"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" 
+        android:layout_below="@+id/report_head"
+        >
+
+        <com.mobilercn.widget.YTReportView
+            android:id="@+id/reportview_sheshi"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/login_bg" />
+
+        <ImageButton
+            android:id="@+id/btn_sheshi_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="4.0dip"
+            android:layout_toLeftOf="@+id/btn_sheshi_next"
+            android:background="@null" />
+
+        <ImageButton
+            android:id="@+id/btn_sheshi_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@null" />
+    </RelativeLayout>
+    
+    <!-- 实施报表 -->
+    <RelativeLayout
+        android:id="@+id/panel_report_shishi"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" 
+        android:layout_below="@+id/report_head"
+        android:visibility="gone"
+        >
+
+        <com.mobilercn.widget.YTReportView
+            android:id="@+id/reportview_shishi"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/login_bg" />
+
+        <ImageButton
+            android:id="@+id/btn_pre_shishi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="4.0dip"
+            android:layout_toLeftOf="@+id/btn_next_shishi"
+            android:background="@null" />
+
+        <ImageButton
+            android:id="@+id/btn_next_shishi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@null" />
+    </RelativeLayout>
+    <!-- 其他报表 -->
+    <!-- 
+    <RelativeLayout
+        android:id="@+id/report_qita"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" 
+        android:layout_below="@+id/report_head"
+        android:visibility="gone"
+        >
+
+        <com.mobilercn.widget.YTReportView
+            android:id="@+id/reportview_qita"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/login_bg" />
+
+        <ImageButton
+            android:id="@+id/btn_pre_qita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="4.0dip"
+            android:layout_toLeftOf="@+id/btn_next"
+            android:background="@null" />
+
+        <ImageButton
+            android:id="@+id/btn_next_qita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@null" />
+    </RelativeLayout>
+     -->
+
+    <!--
+    <com.mobilercn.widget.YTReportView
+		android:background="@drawable/login_bg"
+		android:id="@id/reportview"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"/>
+    
+    <ImageButton                 
+        android:id="@+id/btn_pre"       
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"   
+        android:background="@null"
+        android:layout_toLeftOf="@+id/btn_next"
+        android:layout_marginRight="4.0dip"
+        android:layout_alignParentBottom="true"
+        />
+    
+    <ImageButton          
+        android:id="@+id/btn_next"       
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"   
+        android:background="@null"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+    -->
+
+</RelativeLayout>

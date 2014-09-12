@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50.0dip" 
+    >
+    <TextView 
+        android:id="@+id/tv_list_item"
+        android:layout_width="220.0dip"
+        android:layout_height="40.0dip"
+        android:layout_marginLeft="5.0dip"
+        style="@style/d2e_dialog_watch_kind_item_tv_style"
+        />
+    <CheckBox 
+        android:id="@+id/cb_list_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/tv_list_item"
+        android:layout_marginRight="5.0dip"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        />
+</RelativeLayout>

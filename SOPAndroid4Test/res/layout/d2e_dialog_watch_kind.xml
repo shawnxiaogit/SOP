@@ -1,0 +1,115 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:background="@drawable/login_bg"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+			<!-- 
+            <TextView
+                android:id="@+id/tv_select_count"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="center_vertical"
+                android:textColor="#000000"
+                android:textSize="11pt" 
+                />
+			 -->
+            <ListView
+                android:id="@+id/lv"
+                android:layout_width="fill_parent"
+                android:layout_height="200.0dip"
+                android:cacheColorHint="#00000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:orientation="horizontal" 
+            android:padding="1.0dip"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_other_kind"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:text="@string/other_kind"
+                style="@style/d2e_dialog_watch_kind_tv_style"
+                />
+
+            <EditText
+                android:id="@+id/et_other_kind"
+                android:layout_width="180.0dip"
+                android:layout_height="32.0dip"
+                style="@style/dialog_watch_kind_et_style"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="53.0dip"
+            android:gravity="center"
+            android:orientation="horizontal" 
+            android:padding="2.0dip"
+            >
+
+            <Button
+                android:id="@+id/btn_select_ensure"
+                android:layout_width="wrap_content"
+                android:layout_height="50.0dip"
+                android:gravity="center"
+                android:text="@string/jj_sure" 
+                android:layout_weight="1"
+                />
+            <Button
+                android:id="@+id/btn_cancle_select"
+                android:layout_width="wrap_content"
+                android:layout_height="50.0dip"
+                android:gravity="center"
+                android:text="@string/btn_d2eprompt_cancle" 
+                android:layout_weight="1"
+                />
+            <!--
+	    <Button 
+	        android:id="@+id/btn_select_all"
+	        android:layout_width="80.0dip"
+	        android:layout_height="50.0dip"
+	        android:layout_marginLeft="20.0dip"
+	        android:gravity="center"
+	        android:text="全选"
+	        />
+	    <Button 
+	        android:id="@+id/btn_select_opposite"
+	        android:layout_width="80.0dip"
+	        android:layout_height="50.0dip"
+	        android:layout_marginLeft="20.0dip"
+	        android:gravity="center"
+	        android:text="反选"
+	        />
+	    <Button 
+	        android:id="@+id/btn_cancle_select"
+	        android:layout_width="80.0dip"
+	        android:layout_height="50.0dip"
+	        android:layout_marginLeft="20.0dip"
+	        android:gravity="center"
+	        android:text="取消选择"
+	        />
+            -->
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

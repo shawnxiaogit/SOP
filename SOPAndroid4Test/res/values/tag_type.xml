@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 	<string name="location_tag">位置标签</string>
+ 	<string name="point_tag">作业点标签</string>   
+</resources>

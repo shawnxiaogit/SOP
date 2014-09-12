@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@id/equip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6.0dip"
+        android:layout_marginTop="4.0dip" >
+
+        <TableRow>
+
+            <TextView
+                style="@style/text_content_white"
+                android:layout_width="wrap_content"
+                android:layout_height="35dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="7.0dip"
+                android:text="@string/check_devic_name" />
+
+            <EditText
+                android:id="@id/equit_name"
+                style="@style/loginpage_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="35dip"
+                android:layout_weight="1"
+                android:background="@drawable/sop_edit_login"
+                android:editable="false"
+                android:focusable="false" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/text_content_white"
+                android:layout_width="wrap_content"
+                android:layout_height="35dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="7.0dip"
+                android:text="@string/check_device_state" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <AutoCompleteTextView
+                    android:id="@id/ckpoint_state"
+                    style="@style/loginpage_EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/sop_edit_login"
+                    android:editable="false"
+                    android:text="@string/has_nothing" />
+
+                <Button
+                    android:id="@id/loginImageButton02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/ckpoint_state"
+                    android:layout_alignRight="@id/ckpoint_state"
+                    android:layout_alignTop="@id/ckpoint_state"
+                    android:layout_marginRight="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/text_content_white"
+                android:layout_width="wrap_content"
+                android:layout_height="35dip"
+                android:layout_marginRight="15.0dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="7.0dip"
+                android:text="@string/d2e_check_memo" />
+
+            <EditText
+                android:id="@id/tagpage_position"
+                style="@style/loginpage_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="150dip"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:background="@drawable/sop_edit_login"
+                android:gravity="top"
+                android:maxLines="15"
+                android:scrollbars="vertical"
+                android:singleLine="false" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

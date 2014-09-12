@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical"
+    android:layout_weight="1.0"
+    android:background="@drawable/login_bg"
+    android:scrollbarThumbVertical="@drawable/trans" 
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        >
+
+        <LinearLayout
+            android:id="@+id/panel_mouse_watch_first"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip" >
+
+            <!-- 现场勘查发现的鼠类 0-->
+
+            <RelativeLayout
+                android:id="@id/panel_mouse_watch_kind"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/public_line_top" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_mouse_watch_kind"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_mouse_watch_kind" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_mouse_watch_kind"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_mouse_watch_kind" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_mouse_watch_kind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_mouse_watch_kind"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 室内门窗、通道是否符合防鼠要求1 -->
+
+            <RelativeLayout
+                android:id="@id/panel_mouse_watch_room_in_requ"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_mid" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_mouse_watch_room_in_requ"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_mouse_watch_room_in_requ" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_mouse_watch_room_in_requ"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_mouse_watch_room_in_requ" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_mouse_watch_room_in_requ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_mouse_watch_room_in_requ"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 室内有否鼠迹2 -->
+
+            <RelativeLayout
+                android:id="@id/panel_mouse_trac"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_mid" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_mouse_trac"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_mouse_trac" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_mouse_trac"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_mouse_trac" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_mouse_trac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_mouse_trac"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 室内有否鼠否鼠类的食源、水源 3-->
+
+            <RelativeLayout
+                android:id="@id/panel_mouse_food_drink"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_mid" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_mouse_food_drink"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_mouse_food_drink" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_mouse_food_drink"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_mouse_food_drink" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_mouse_food_drink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_mouse_food_drink"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 室内有否鼠否鼠类筑巢条件 4-->
+
+            <RelativeLayout
+                android:id="@id/panel_mouse_nest_cond"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_mid" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_mouse_nest_cond"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_mouse_nest_cond" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_mouse_nest_cond"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_mouse_nest_cond" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_mouse_nest_cond"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_mouse_nest_cond"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 近期室内有否发现过活鼠/鼠尸 5-->
+
+            <RelativeLayout
+                android:id="@id/panel_mouse_live_corpse"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_mid" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_mouse_live_corpse"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_mouse_live_corpse" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_mouse_live_corpse"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_mouse_live_corpse" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_mouse_live_corpse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_mouse_live_corpse"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 室外建筑周边有否鼠迹 6-->
+
+            <RelativeLayout
+                android:id="@id/panel_room_out_mouse_trac"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_mid" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_room_out_mouse_trac"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_room_out_mouse_trac" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_room_out_mouse_trac"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_room_out_mouse_trac" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_room_out_mouse_trac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_room_out_mouse_trac"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 室外有否鼠类的食源、水源7 -->
+
+            <RelativeLayout
+                android:id="@id/panel_room_out_mouse_food_drink"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_mid"
+                android:gravity="center_vertical" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_room_out_mouse_food_drink"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_room_out_mouse_food_drink" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_room_out_mouse_food_drink"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_room_out_mouse_food_drink" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_room_out_mouse_food_drink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_room_out_mouse_food_drink"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 室外有否鼠类筑巢条件8 -->
+
+            <RelativeLayout
+                android:id="@id/panel_room_out_mouse_nest_cond"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_mid"
+                android:gravity="center_vertical" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_room_out_mouse_nest_cond"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_room_out_mouse_nest_cond" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_room_out_mouse_nest_cond"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_room_out_mouse_nest_cond" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_room_out_mouse_nest_cond"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_room_out_mouse_nest_cond"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 近期室外有否发现过鼠类9 -->
+
+            <RelativeLayout
+                android:id="@id/panel_room_out_has_mouse"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_mid"
+                android:gravity="center_vertical" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_room_out_has_mouse"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_room_out_has_mouse" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_room_out_has_mouse"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_room_out_has_mouse" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_room_out_has_mouse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_room_out_has_mouse"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 环境保洁制度是否完善10 -->
+
+            <RelativeLayout
+                android:id="@id/panel_envir_clean"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_mid"
+                android:gravity="center_vertical" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_envir_clean"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_envir_clean" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_envir_clean"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_envir_clean" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_envir_clean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_envir_clean"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 卫生设施是否符合防鼠要求11 -->
+
+            <RelativeLayout
+                android:id="@id/panel_equip_match_requ"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_mid"
+                android:gravity="center_vertical" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_equip_match_requ"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_equip_match_requ" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_equip_match_requ"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_equip_match_requ" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_equip_match_requ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_equip_match_requ"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 客户方建筑及物品是否遭到鼠类侵害12 -->
+
+            <RelativeLayout
+                android:id="@id/panel_things_be_breaked"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_mid"
+                android:gravity="center_vertical" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_things_be_breaked"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_things_be_breaked" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_things_be_breaked"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_things_be_breaked" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_things_be_breaked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_things_be_breaked"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 客户方生产流程有否鼠类入侵风险 13-->
+
+            <RelativeLayout
+                android:id="@id/panel_pipe_line_invade_mouse"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_mid"
+                android:gravity="center_vertical" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_pipe_line_invade_mouse"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_pipe_line_invade_mouse" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_pipe_line_invade_mouse"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_pipe_line_invade_mouse" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_pipe_line_invade_mouse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_pipe_line_invade_mouse"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 客户方有否鼠害综合防制的理念14 -->
+
+            <RelativeLayout
+                android:id="@id/panel_mouse_preve_cure"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_mid"
+                android:gravity="center_vertical" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_mouse_preve_cure"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_mouse_preve_cure" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_mouse_preve_cure"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_mouse_preve_cure" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_mouse_preve_cure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_mouse_preve_cure"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 客户方有否鼠类预防设施 15-->
+
+            <RelativeLayout
+                android:id="@id/panel_mouse_preve_cure_equip"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_bottom"
+                android:gravity="center_vertical" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_mouse_preve_cure_equip"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_mouse_preve_cure_equip" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_mouse_preve_cure_equip"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_mouse_preve_cure_equip" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_mouse_preve_cure_equip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_mouse_preve_cure_equip"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/panel_mouse_watch_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/panel_mouse_watch_first"
+            android:layout_marginBottom="10.0dip"
+			android:paddingLeft="10.0dip"
+			android:paddingRight="10.0dip"
+            android:layout_marginTop="10.0dp"
+            android:gravity="center" 
+            android:paddingBottom="20.0dip"
+            >
+
+            <Button
+                android:id="@id/btn_save_mouse_watch"
+                style="@style/place_data_coll_btn_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="40.0dip"
+                android:layout_weight="1"
+                android:text="@string/btn_save_mouse_watch"
+                android:background="@drawable/blue_public_line"
+                android:layout_marginRight="2.0dip"
+                />
+			<!-- 
+            <Button
+                android:id="@id/btn_reset_mouse_watch"
+                style="@style/place_data_coll_btn_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="40.0dip"
+                android:layout_weight="1"
+                android:background="@drawable/btn_add" 
+                android:text="@string/btn_reset_mouse_watch"
+                />
+ 			-->
+            <Button
+                android:id="@id/btn_back_mouse_watch"
+                style="@style/place_data_coll_btn_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="40.0dip"
+                android:layout_weight="1"
+                android:background="@drawable/blue_public_line"
+                android:layout_marginLeft="2.0dip"
+                android:text="@string/btn_back_mouse_watch" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

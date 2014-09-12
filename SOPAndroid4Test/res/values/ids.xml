@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item name="loginRoot" type="id">false</item>
+    <item name="loginLineLayout" type="id">false</item>
+    <item name="loginLayout" type="id">false</item>
+    <item name="loginLogo" type="id">false</item>
+    <item name="login_edit_account" type="id">false</item>
+    <item name="loginTextView01" type="id">false</item>
+    <item name="loginImageButton02" type="id">false</item>
+    <item name="login_edit_pwd" type="id">false</item>
+    <item name="login_btn" type="id">false</item>
+    <item name="loginTextView02" type="id">false</item>
+    <!-- 
+    <item name="btn_checkin_card" type="id">false</item>
+    <item name="btn_checkin_back" type="id">false</item>
+    <item name="btn_checkin_submit" type="id">false</item>
+    <item name="loginTableLayout01" type="id">false</item>
+     -->
+    <item name="login_cb_saveuna" type="id">false</item>
+    <item name="login_cb_savepwd" type="id">false</item>
+    <item type="id" name="forget_pwd">false</item>
+    <item type="id" name="panel_msg_state">false</item>
+    <item type="id" name="msg_state">false</item>
+    <item type="id" name="msg_text">false</item>
+    <item type="id" name="msg_cb">false</item>
+    <item type="id" name="logo_screen">false</item>
+    <item type="id" name="d2e_msg_list">false</item>
+    <item name="title" type="id">false</item>
+    <item name="read_msg_btn_ok" type="id">false</item>
+    <item name="read_msg_btn_cancel" type="id">false</item>
+    <item name="read_msg_title" type="id">false</item>
+    <item type="id" name="public_icon">false</item>
+    <item type="id" name="public_title">false</item>
+    <item type="id" name="msgcontentText">false</item>
+    <item type="id" name="menu_help">false</item>
+    <item type="id" name="menu_message">false</item>
+    <item type="id" name="menu_sop">false</item>
+    <item type="id" name="menu_workSheet">false</item>
+    <item type="id" name="menu_report">false</item>
+    <item type="id" name="menu_relogin">false</item>
+    <item name="public_gridview" type="id">false</item>
+    <item name="tagpage_custom" type="id">false</item>
+    <item name="tagpage_customname" type="id">false</item>
+    <item name="tagepage_customlogo" type="id">false</item>
+    <item name="login_logo_head" type="id">false</item>
+    <item name="tagpage_position" type="id">false</item>
+    <item name="gridview_item_layout" type="id">false</item>
+    <item name="progress_01" type="id">false</item>
+    <item name="progress_img_01" type="id">false</item>
+    <item name="menu_back" type="id">false</item>
+    <item name="menu_back_previous" type="id">false</item>
+    <item name="menu_back_home_page" type="id">false</item>
+    
+    <item name="menu_back_previous_help" type="id">false</item>
+    <item name="menu_customer_back_home_page" type="id">false</item>
+    <item name="menu_back_previous_customer" type="id">false</item>
+    <item name="menu_location_back_home_page" type="id">false</item>
+    <item name="menu_back_previous_location" type="id">false</item>
+    <item name="menu_point_back_home_page" type="id">false</item>
+    
+    <item name="menu_back_home" type="id">false</item>
+    <item name="menu_view" type="id">false</item>
+    <item type="id" name="menu_save">false</item>
+    <item name="viewreport" type="id">false</item>
+    <item type="id" name="loading_anim_imgview">false</item>
+    <item name="loading_tip_textview" type="id">false</item>
+    <item name="cancel_process_btn" type="id">false</item>
+    <item name="equip" type="id">false</item>
+    <item name="show_next" type="id">false</item>
+    <item type="id" name="d2e_process_layout">false</item>
+    <item type="id" name="tagpage_tag">false</item>
+    <item type="id" name="panel_tagpage_tag">false</item>
+    <item type="id" name="ckpoint_state">false</item>
+    <item type="id" name="comment_ckpoint_state">false</item>
+    <item type="id" name="comment_panel_choseclient">false</item>
+    <item type="id" name="comment_loginImageButton02">false</item>
+    <item type="id" name="equit_name">false</item>
+    <item type="id" name="flipper">false</item>
+    <item name="calendar_title_text" type="id">false</item>
+    <item name="calendar_arrow_pre" type="id">false</item>
+    <item name="calendar_arrow_next" type="id">false</item>
+    <item name="monthview" type="id">false</item>
+    <item name="menu_sms" type="id">false</item>
+    <item name="menu_email" type="id">false</item>
+    <item name="mobile_num" type="id">false</item>
+    <item name="sec_code" type="id">false</item>
+    <item type="id" name="countTask">false</item>
+    <item type="id" name="taskimg">false</item>
+    <item type="id" name="reportview">false</item>
+    <item type="id" name="d2e_worksheet_list">false</item>
+    <item type="id" name="read_msg_btn_send">false</item>
+    <item type="id" name="menu_customer">false</item>
+    <item type="id" name="menu_Ohpest">false</item>
+    <item type="id" name="location_id">false</item>
+    <item type="id" name="location_name">false</item>
+    <item name="location_memo" type="id">false</item>
+    <item type="id" name="tagpage_memo">false</item>
+    <item type="id" name="menu_submit">false</item>
+    <item type="id" name="public_information">false</item>
+    <item type="id" name="worksheet_ckb">false</item>
+    <item type="id" name="worksheet_text">false</item>
+    <item type="id" name="menu_remove">false</item>
+    <item type="id" name="menu_init">false</item>
+    <item type="id" name="btn_yes">false</item>
+    <item type="id" name="btn_clear">false</item>
+    <item type="id" name="btn_retry">false</item>
+    <item name="equip_state" type="id">false</item>
+    <item name="txt_iconView" type="id">false</item>
+    <item name="txt_stateView" type="id">false</item>
+    <item name="txt_sizeLabel" type="id">false</item>
+    <item name="txt_dateLabel" type="id">false</item>
+    <item name="txt_titleLabel" type="id">false</item>
+    <item type="id" name="tagpage_id">false</item>
+    <item type="id" name="btn_checkin">false</item>
+    <item type="id" name="d2e_check_list">false</item>
+    <item type="id" name="tag_new">false</item>
+    <item name="tagpage_stype" type="id">false</item>
+    <item name="tagepage_custom_logo" type="id">false</item>
+    <item name="tagpage_serial" type="id">false</item>
+    <item name="tagpage_person" type="id">false</item>
+    <item name="tagpage_Supplies" type="id">false</item>
+    <item name="tagpage_Instrument" type="id">false</item>
+    <item name="tagpage_Rate" type="id">false</item>
+    <item name="tagpage_Volume" type="id">false</item>
+    <item name="tagpage_Rate_fact" type="id">false</item>
+    <item name="tagpage_Volume_fact" type="id">false</item>
+    <item name="tagpage_Roach" type="id">false</item>
+    <item name="tagpage_Mouse" type="id">false</item>
+    <item name="tagpage_Mouse_number" type="id">false</item>
+    <item name="tagpage_Equip_power" type="id">false</item>
+    <item name="tagpage_RoachActive" type="id">false</item>
+    <item name="tagpage_MouseActive" type="id">false</item>
+    <item name="tagpage_RoachAdults" type="id">false</item>
+    <item name="tagpage_MouseAdults" type="id">false</item>
+    <item name="tagpage_RoachNymphs" type="id">false</item>
+    <item name="tagpage_MouseNymphs" type="id">false</item>
+    <item name="menu_problem" type="id">false</item>
+    <item type="id" name="report_memo">false</item>   
+    
+    <!-- add by kris 2012-09-06 -->
+    <item type="id" name="function_icon">false</item>   
+    <item type="id" name="function_title">false</item>
+    <item type="id" name="main_screen">false</item>
+    <item type="id" name="main_about">false</item>
+    <item type="id" name="main_feedback">false</item>   
+    <item type="id" name="menu_home">false</item>
+    
+    <item type="id" name="worksheet_content">false</item>
+    <item type="id" name="worksheet_address">false</item>
+    
+    <item type="id" name="btn_checkin_card">false</item>
+    <item type="id" name="btn_checkin_back">false</item>
+    <item type="id" name="btn_checkin_submit">false</item>
+    <item type="id" name="loginTableLayout01">false</item>
+    <item type="id" name="LabelTextView1">false</item>
+    <item type="id" name="LabelTextView2">false</item>
+    <item type="id" name="LabelTextView3">false</item>
+    <item type="id" name="LabelTextView4">false</item>
+    <item type="id" name="LabelTextView5">false</item>
+    <item type="id" name="LabelTextView6">false</item>
+  
+    <item type="id" name="main_message">false</item>
+    <item type="id" name="main_sop">false</item>
+    <item type="id" name="main_worksheet">false</item>
+    <item type="id" name="main_report">false</item>
+    <item type="id" name="worksheet_name">false</item>
+    <item type="id" name="worksheet_date">false</item>
+    <item type="id" name="main_support">false</item>
+    <item type="id" name="main_exit">false</item>
+    
+    
+    <!-- for d2e_now_palce_fun -->
+    
+    <item type="id" name="panel_now_watch">false</item>
+    <item type="id" name="tv_now_watch">false</item>
+    <item type="id" name="panel_now_reflect">false</item>
+    <item type="id" name="tv_now_reflect">false</item>
+    
+    <!-- for d2e_place_data_coll -->
+    
+    <!-- 客户名称 -->
+    <item type="id" name="panel_place_data_cust_name">false</item>
+    <item type="id" name="tv_place_data_cust_name">false</item>
+    <item type="id" name="et_place_data_cust_name">false</item>
+    
+    <!-- 勘查现场日期 -->
+    <item type="id" name="panel_place_data_coll_date">false</item>
+    <item type="id" name="tv_place_data_coll_date">false</item>
+    <item type="id" name="et_place_data_coll_date">false</item>
+    
+    <!--勘查人员  -->
+    <item type="id" name="panel_place_data_coll_people">false</item>
+    <item type="id" name="tv_place_data_coll_people">false</item>
+    <item type="id" name="et_place_data_coll_people">false</item>
+    
+    <!-- 勘客户联系人 -->
+    <item type="id" name="panel_place_data_coll_conn">false</item>
+    <item type="id" name="tv_place_data_coll_conn">false</item>
+    <item type="id" name="et_place_data_coll_conn">false</item>
+
+    <!-- 勘查现场地址 -->
+    <item type="id" name="panel_place_data_coll_addr">false</item>
+    <item type="id" name="tv_place_data_coll_addr">false</item>
+    <item type="id" name="et_place_data_coll_addr">false</item>
+
+    <!-- 客户方陪同人员 -->
+    <item type="id" name="panel_place_data_coll_peitong">false</item>
+    <item type="id" name="tv_place_data_coll_peitong">false</item>
+    <item type="id" name="et_place_data_coll_peitong">false</item>
+    
+    <!-- 鼠类勘查 -->
+    <item type="id" name="panel_mouse_watch">false</item>
+    <item type="id" name="tv_mouse_watch">false</item>
+    
+    <!-- 蟑螂勘查 -->
+    <item type="id" name="panel_cockroach_watch">false</item>
+    <item type="id" name="tv_cockroach_watch">false</item>
+    
+    <!-- 飞虫勘查 -->
+    <item type="id" name="panel_fly_insect_watch">false</item>
+    <item type="id" name="tv_fly_insect_watch">false</item>
+    
+    <!-- 现场勘查发现的其他虫害 -->
+    <item type="id" name="panel_other_insect_watch">false</item>
+    <item type="id" name="tv_other_insect_watch">false</item>
+
+    <!-- 重点区域勘查结果 -->
+    <item type="id" name="panel_watch_result">false</item>
+    <item type="id" name="tv_watch_result">false</item>
+	
+    <!-- 功能按钮 -->
+    <item type="id" name="panel_data_coll_fun">false</item>
+    <item type="id" name="btn_submit_data_coll_fun">false</item>
+    <item type="id" name="btn_reset_data_coll_fun">false</item>
+    <item type="id" name="btn_back_data_coll_fun">false</item>
+    
+    
+    <!-- for d2e_mouse_watch -->
+    <!-- 现场勘查发现的鼠类 -->
+    <item type="id" name="panel_mouse_watch_kind">false</item>
+    <item type="id" name="tv_mouse_watch_kind">false</item>
+    <item type="id" name="at_mouse_watch_kind">false</item>
+    <item type="id" name="ibtn_mouse_watch_kind">false</item>
+    
+    <!-- 室内门窗、通道是否符合防鼠要求 -->
+    <item type="id" name="panel_mouse_watch_room_in_requ">false</item>
+    <item type="id" name="tv_mouse_watch_room_in_requ">false</item>
+    <item type="id" name="at_mouse_watch_room_in_requ">false</item>
+    <item type="id" name="ibtn_mouse_watch_room_in_requ">false</item>
+    
+    <!-- 室内有否鼠迹 -->
+    <item type="id" name="panel_mouse_trac">false</item>
+    <item type="id" name="tv_mouse_trac">false</item>
+    <item type="id" name="at_mouse_trac">false</item>
+    <item type="id" name="ibtn_mouse_trac">false</item>
+    
+    <!-- 室内有否鼠否鼠类的食源、水源 -->
+    <item type="id" name="panel_mouse_food_drink">false</item>
+    <item type="id" name="tv_mouse_food_drink">false</item>
+    <item type="id" name="at_mouse_food_drink">false</item>
+    <item type="id" name="ibtn_mouse_food_drink">false</item>
+    
+    <!-- 室内有否鼠否鼠类筑巢条件 -->
+    <item type="id" name="panel_mouse_nest_cond">false</item>
+    <item type="id" name="tv_mouse_nest_cond">false</item>
+    <item type="id" name="at_mouse_nest_cond">false</item>
+    <item type="id" name="ibtn_mouse_nest_cond">false</item>
+    
+    <!-- 近期室内有否发现过活鼠/鼠尸 -->
+    <item type="id" name="panel_mouse_live_corpse">false</item>
+    <item type="id" name="tv_mouse_live_corpse">false</item>
+    <item type="id" name="at_mouse_live_corpse">false</item>
+    <item type="id" name="ibtn_mouse_live_corpse">false</item>
+    
+    <!-- 室外建筑周边有否鼠迹 -->
+    <item type="id" name="panel_room_out_mouse_trac">false</item>
+    <item type="id" name="tv_room_out_mouse_trac">false</item>
+    <item type="id" name="at_room_out_mouse_trac">false</item>
+    <item type="id" name="ibtn_room_out_mouse_trac">false</item>
+    
+    <!-- 室外有否鼠类的食源、水源 -->
+    <item type="id" name="panel_room_out_mouse_food_drink">false</item>
+    <item type="id" name="tv_room_out_mouse_food_drink">false</item>
+    <item type="id" name="at_room_out_mouse_food_drink">false</item>
+    <item type="id" name="ibtn_room_out_mouse_food_drink">false</item>
+    
+    <!-- 室外有否鼠类筑巢条件 -->
+    <item type="id" name="panel_room_out_mouse_nest_cond">false</item>
+    <item type="id" name="tv_room_out_mouse_nest_cond">false</item>
+    <item type="id" name="at_room_out_mouse_nest_cond">false</item>
+    <item type="id" name="ibtn_room_out_mouse_nest_cond">false</item>
+
+    <!-- 近期室外有否发现过鼠类 -->
+    <item type="id" name="panel_room_out_has_mouse">false</item>
+    <item type="id" name="tv_room_out_has_mouse">false</item>
+    <item type="id" name="at_room_out_has_mouse">false</item>
+    <item type="id" name="ibtn_room_out_has_mouse">false</item>
+    
+    <!-- 环境保洁制度是否完善 -->
+    <item type="id" name="panel_envir_clean">false</item>
+    <item type="id" name="tv_envir_clean">false</item>
+    <item type="id" name="at_envir_clean">false</item>
+    <item type="id" name="ibtn_envir_clean">false</item>
+    
+    <!-- 卫生设施是否符合防鼠要求 -->
+    <item type="id" name="panel_equip_match_requ">false</item>
+    <item type="id" name="tv_equip_match_requ">false</item>
+    <item type="id" name="at_equip_match_requ">false</item>
+    <item type="id" name="ibtn_equip_match_requ">false</item>
+    
+    <!-- 客户方建筑及物品是否遭到鼠类侵害 -->
+    <item type="id" name="panel_things_be_breaked">false</item>
+    <item type="id" name="tv_things_be_breaked">false</item>
+    <item type="id" name="at_things_be_breaked">false</item>
+    <item type="id" name="ibtn_things_be_breaked">false</item>
+
+    <!-- 客户方生产流程有否鼠类入侵风险 -->
+    <item type="id" name="panel_pipe_line_invade_mouse">false</item>
+    <item type="id" name="tv_pipe_line_invade_mouse">false</item>
+    <item type="id" name="at_pipe_line_invade_mouse">false</item>
+    <item type="id" name="ibtn_pipe_line_invade_mouse">false</item>
+    
+    <!-- 客户方有否鼠害综合防制的理念 -->
+    <item type="id" name="panel_mouse_preve_cure">false</item>
+    <item type="id" name="tv_mouse_preve_cure">false</item>
+    <item type="id" name="at_mouse_preve_cure">false</item>
+    <item type="id" name="ibtn_mouse_preve_cure">false</item>
+
+    <!-- 客户方有否鼠类预防设施 -->
+    <item type="id" name="panel_mouse_preve_cure_equip">false</item>
+    <item type="id" name="tv_mouse_preve_cure_equip">false</item>
+    <item type="id" name="at_mouse_preve_cure_equip">false</item>
+    <item type="id" name="ibtn_mouse_preve_cure_equip">false</item>
+    
+    <!-- 功能按钮 -->
+    <item type="id" name="btn_save_mouse_watch">false</item>
+    <item type="id" name="btn_reset_mouse_watch">false</item>
+    <item type="id" name="btn_back_mouse_watch">false</item>
+    
+    
+    <!-- for d2e_cockroach_watch -->
+    <!-- 现场勘察时发现的蟑螂 -->
+    <item type="id" name="panel_cockroach_watch_kind">false</item>
+    <item type="id" name="tv_cockroach_watch_kind">false</item>
+    <item type="id" name="at_cockroach_watch_kind">false</item>
+    <item type="id" name="ibtn_cockroach_watch_kind">false</item>
+    
+    <!-- 室内水池、灶台、电器等区域有否蟑迹 -->
+    <item type="id" name="panel_cockroach_watch_room_in_find">false</item>
+    <item type="id" name="tv_cockroach_watch_room_in_find">false</item>
+    <item type="id" name="at_cockroach_watch_room_in_find">false</item>
+    <item type="id" name="ibtn_cockroach_watch_room_in_find">false</item>
+
+    <!-- 室内食品、仓储区域是否密封 -->
+    <item type="id" name="panel_cockroach_room_in_seal">false</item>
+    <item type="id" name="tv_cockroach_room_in_seal">false</item>
+    <item type="id" name="at_cockroach_room_in_seal">false</item>
+    <item type="id" name="ibtn_cockroach_room_in_seal">false</item>
+
+    <!-- 室内各种管线、橱柜、家具有否蟑迹 -->
+    <item type="id" name="panel_cockroach_room_in_furni_find">false</item>
+    <item type="id" name="tv_cockroach_room_in_furni_find">false</item>
+    <item type="id" name="at_cockroach_room_in_furni_find">false</item>
+    <item type="id" name="ibtn_cockroach_room_in_furni_find">false</item>
+
+    <!-- 近期室内有否发现过蟑螂 -->
+    <item type="id" name="panel_cockroach_room_in_curr_find">false</item>
+    <item type="id" name="tv_cockroach_room_in_curr_find">false</item>
+    <item type="id" name="at_cockroach_room_in_curr_find">false</item>
+    <item type="id" name="ibtn_cockroach_room_in_curr_find">false</item>
+
+    <!-- 室内门窗、通道、墙壁缝隙是否符合防蟑螂要求 -->
+    <item type="id" name="panel_cockroach_room_in_requ">false</item>
+    <item type="id" name="tv_cockroach_room_in_requ">false</item>
+    <item type="id" name="at_cockroach_room_in_requ">false</item>
+    <item type="id" name="ibtn_cockroach_room_in_requ">false</item>
+    
+    <!-- 环境保洁制度是否完善 -->
+    <item type="id" name="panel_cockroach_watch_syst_perf">false</item>
+    <item type="id" name="tv_cockroach_watch_syst_perf">false</item>
+    <item type="id" name="at_cockroach_watch_syst_perf">false</item>
+    <item type="id" name="ibtn_cockroach_watch_syst_perf">false</item>
+
+    <!-- 卫生设施是否符合防蟑螂的要求 -->
+    <item type="id" name="panel_cockroach_watch_hygiene_requ">false</item>
+    <item type="id" name="tv_cockroach_watch_hygiene_requ">false</item>
+    <item type="id" name="at_cockroach_watch_hygiene_requ">false</item>
+    <item type="id" name="ibtn_cockroach_watch_hygiene_requ">false</item>
+    
+    <!-- 客户方生产流程有否蟑螂入侵风险 -->
+    <item type="id" name="panel_cockroach_watch_pipeline_risk">false</item>
+    <item type="id" name="tv_cockroach_watch_pipeline_risk">false</item>
+    <item type="id" name="at_cockroach_watch_pipeline_risk">false</item>
+    <item type="id" name="ibtn_cockroach_watch_pipeline_risk">false</item>
+    
+    <!-- 客户方建筑及物品是否遭到蟑螂侵害 -->
+    <item type="id" name="panel_cockroach_watch_things_be_breaked">false</item>
+    <item type="id" name="tv_cockroach_watch_things_be_breaked">false</item>
+    <item type="id" name="at_cockroach_watch_things_be_breaked">false</item>
+    <item type="id" name="ibtn_cockroach_watch_things_be_breaked">false</item>
+    
+    <!-- 客户方有否蟑螂综合防制的理念 -->
+    <item type="id" name="panel_cockroach_watch_prevention_think">false</item>
+    <item type="id" name="tv_cockroach_watch_prevention_think">false</item>
+    <item type="id" name="at_cockroach_watch_prevention_think">false</item>
+    <item type="id" name="ibtn_cockroach_watch_prevention_think">false</item>
+	
+    <!-- 功能按钮 -->
+    <item type="id" name="btn_save_cockroach_watch">false</item>
+    <item type="id" name="btn_reset_cockroach_watch">false</item>
+    <item type="id" name="btn_back_cockroach_watch">false</item>
+    
+    
+    <!-- for d2e_fly_insect_watch -->
+    <!-- 现场勘察时发现的飞虫 -->
+    <item type="id" name="panel_fly_insect_watch_kind">false</item>
+    <item type="id" name="tv_fly_insect_watch_kind">false</item>
+    <item type="id" name="at_fly_insect_watch_kind">false</item>
+    <item type="id" name="ibtn_fly_insect_watch_kind">false</item>
+    
+    <!-- 室内门窗、通道是否符合防飞虫要求 -->
+    <item type="id" name="panel_fly_insect_watch_room_in_requ">false</item>
+    <item type="id" name="tv_fly_insect_watch_room_in_requ">false</item>
+    <item type="id" name="at_fly_insect_watch_room_in_requ">false</item>
+    <item type="id" name="ibtn_fly_insect_watch_room_in_requ">false</item>
+    
+    <!-- 室内垃圾是否暴露堆放 -->
+    <item type="id" name="panel_fly_insect_room_in_rubb_bare">false</item>
+    <item type="id" name="tv_fly_insect_room_in_rubb_bare">false</item>
+    <item type="id" name="at_fly_insect_room_in_rubb_bare">false</item>
+    <item type="id" name="ibtn_fly_insect_room_in_rubb_bare">false</item>
+	
+	<!-- 室内卫生间是否符合卫生标准 -->
+	<item type="id" name="panel_fly_insect_room_in_hygiene_stan">false</item>
+	<item type="id" name="tv_panel_fly_insect_room_in_hygiene_stan">false</item>
+	<item type="id" name="at_panel_fly_insect_room_in_hygiene_stan">false</item>
+	<item type="id" name="ibtn_panel_fly_insect_room_in_hygiene_stan">false</item>
+	
+	<!-- 室内地面、下水道有否积水 -->
+	<item type="id" name="panel_fly_insect_room_in_hydrops">false</item>
+	<item type="id" name="tv_fly_insect_room_in_hydrops">false</item>
+	<item type="id" name="at_fly_insect_room_in_hydrops">false</item>
+	<item type="id" name="ibtn_fly_insect_room_in_hydrops">false</item>
+	
+	<!-- 室内进出通道、出入口有否门帘、风幕机、灭虫灯等设施 -->
+	<item type="id" name="panel_fly_insect_room_in_has_equip">false</item>
+	<item type="id" name="tv_fly_insect_room_in_has_equip">false</item>
+	<item type="id" name="at_fly_insect_room_in_has_equip">false</item>
+	<item type="id" name="ibtn_fly_insect_room_in_has_equip">false</item>
+	
+	<!-- 室外建筑周边有否垃圾、积水吸引飞虫 -->
+	<item type="id" name="panel_fly_insect_room_out_rubb">false</item>
+	<item type="id" name="tv_fly_insect_room_out_rubb">false</item>
+	<item type="id" name="at_fly_insect_room_out_rubb">false</item>
+	<item type="id" name="ibtn_fly_insect_room_out_rubb">false</item>
+	
+	<!-- 室外建筑周边有否路灯、广告牌吸引飞虫 -->
+	<item type="id" name="panel_fly_insect_room_out_light">false</item>
+	<item type="id" name="tv_fly_insect_room_out_light">false</item>
+	<item type="id" name="at_fly_insect_room_out_light">false</item>
+	<item type="id" name="ibtn_fly_insect_room_out_light">false</item>
+	
+	<!-- 环境保洁制度是否完善 -->
+	<item type="id" name="panel_fly_insect_envir_syst_perf">false</item>
+	<item type="id" name="tv_fly_insect_envir_syst_perf">false</item>
+	<item type="id" name="at_fly_insect_envir_syst_perf">false</item>
+	<item type="id" name="ibtn_fly_insect_envir_syst_perf">false</item>
+
+	<!-- 卫生设施是否符合防飞虫的要求 -->
+	<item type="id" name="panel_fly_insect_equip_requ">false</item>
+	<item type="id" name="tv_fly_insect_equip_requ">false</item>
+	<item type="id" name="at_fly_insect_equip_requ">false</item>
+	<item type="id" name="ibtn_fly_insect_equip_requ">false</item>
+	
+	<!-- 客户方生产流程有否飞虫入侵风险 -->
+	<item type="id" name="panel_fly_insect_pipeline_risk">false</item>
+	<item type="id" name="tv_fly_insect_pipeline_risk">false</item>
+	<item type="id" name="at_fly_insect_pipeline_risk">false</item>
+	<item type="id" name="ibtn_fly_insect_pipeline_risk">false</item>
+	
+	<!-- 客户方有否飞虫综合防制的理念 -->
+	<item type="id" name="panel_fly_insect_prevention_think">false</item>
+	<item type="id" name="tv_fly_insect_prevention_think">false</item>
+	<item type="id" name="at_fly_insect_prevention_think">false</item>
+	<item type="id" name="ibtn_fly_insect_prevention_think">false</item>
+	
+	<!-- 功能按钮 -->
+	<item type="id" name="btn_save_fly_insect_watch">false</item>
+	<item type="id" name="btn_reset_fly_insect_watch">false</item>
+	<item type="id" name="btn_back_fly_insect_watch">false</item>
+	
+	
+	<!-- for_d2e_other_insect_watch -->
+	<!-- 虫害名称 -->
+	<item type="id" name="panel_other_insect_name">false</item>
+	<item type="id" name="tv_other_insect_name">false</item>
+	<item type="id" name="et_other_insect_name">false</item>
+	
+	<!-- 发现地点 -->
+	<item type="id" name="panel_other_insect_area">false</item>
+	<item type="id" name="tv_other_insect_area">false</item>
+	<item type="id" name="et_other_insect_area">false</item>
+	
+	<!-- 备注 -->
+	<item type="id" name="panel_other_insect_mark">false</item>
+	<item type="id" name="tv_other_insect_mark">false</item>
+	<item type="id" name="et_other_insect_mark">false</item>
+	
+	
+	<!-- for d2e_watch_result -->
+	<!-- 区域 -->
+	<item type="id" name="panel_watch_result_area">false</item>
+	<item type="id" name="tv_watch_result_area">false</item>
+	<item type="id" name="et_watch_result_area">false</item>
+	
+	<!-- 勘查结果 -->
+	<item type="id" name="panel_watch_result_result">false</item>
+	<item type="id" name="tv_watch_result_result">false</item>
+	<item type="id" name="et_watch_result_result">false</item>
+	
+	<!-- 备注 -->
+	<item type="id" name="panel_watch_result_mark">false</item>
+	<item type="id" name="tv_watch_result_mark">false</item>
+	<item type="id" name="et_watch_result_mark">false</item>
+	
+	
+	
+</resources>

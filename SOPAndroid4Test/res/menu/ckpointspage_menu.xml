@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@id/menu_back"
+        android:icon="@drawable/menu_back"
+        android:title="@string/btn_back_mouse_watch"/>
+    <item
+        android:id="@id/menu_view"
+        android:icon="@drawable/menu_view"
+        android:title="@string/doing_preview"/>
+    <item
+        android:id="@id/menu_save"
+        android:icon="@drawable/menu_save"
+        android:title="@string/btn_save_mouse_watch"/>
+
+</menu>

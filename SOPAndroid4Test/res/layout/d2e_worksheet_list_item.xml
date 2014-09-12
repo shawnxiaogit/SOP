@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:background="@drawable/work_item"
+  android:layout_width="fill_parent"
+  android:layout_height="180.0dip">
+  
+  <LinearLayout 
+      android:orientation="horizontal"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"> 
+      
+      <TextView
+          android:id="@id/worksheet_name"
+		  android:textColor="#ffffff"
+		  android:layout_marginLeft="20dip"
+		  android:singleLine="true"
+		  android:paddingTop="20.0dip"
+		  android:textSize="18.0sp"
+		  android:gravity="left"
+		  android:text="456"
+		  android:layout_weight="1"
+		  android:layout_width="fill_parent" 
+		  android:layout_height="wrap_content"/>
+
+      <TextView
+          android:id="@id/worksheet_date"
+		  android:textColor="#ffffff"
+		  android:textSize="18.0sp"
+		  android:gravity="right"
+		  android:layout_weight="1"
+		  android:layout_marginRight="20dip"
+		  android:singleLine="true"
+		  android:text="123"
+		  android:paddingTop="20.0dip"
+		  android:layout_width="fill_parent" 
+		  android:layout_height="wrap_content"/>
+  
+  </LinearLayout>
+  
+  <LinearLayout 
+      android:layout_marginTop="15.0dip"
+      android:orientation="horizontal"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"> 
+      
+	  <CheckBox 
+	      android:layout_marginTop="4.0dip"
+	      android:layout_marginLeft="18.0dip"
+	      android:id="@id/worksheet_ckb" 
+	      android:layout_below="@+id/layout_01"
+		  android:focusable="false"
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"/>
+      
+      <LinearLayout 
+          android:layout_marginTop="15.0dip"
+          android:orientation="vertical"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"> 
+      <!-- 开始时间 -->    
+      <TextView
+          android:id="@id/worksheet_text"
+		  android:textColor="#000000"
+		  android:textSize="15.0sp"
+		  android:layout_weight="1"
+		  android:layout_marginRight="20dip"
+		  android:singleLine="true"
+		  android:text="123"
+          android:scrollHorizontally="true"
+          android:ellipsize="marquee"
+          android:marqueeRepeatLimit="marquee_forever"
+          android:focusableInTouchMode="true"  
+          android:focusable="true"					    
+		  android:paddingLeft="6.0dip"
+		  android:layout_width="fill_parent" 
+		  android:layout_height="wrap_content"/>
+      <!-- 工时 -->
+      <TextView
+          android:id="@+id/worksheet_hour"
+		  android:textColor="#000000"
+		  android:textSize="15.0sp"
+		  android:layout_weight="1"
+		  android:layout_marginRight="20dip"
+		  android:singleLine="true"
+		  android:text="123"
+		  android:paddingLeft="6.0dip"
+		  android:layout_width="fill_parent" 
+		  android:layout_height="wrap_content"/>
+
+      <TextView
+          android:id="@id/worksheet_content"
+		  android:textColor="#000000"
+		  android:textSize="15.0sp"
+		  android:layout_weight="1"
+		  android:layout_marginRight="20dip"
+		  android:singleLine="true"
+		  android:text="123"
+		  android:paddingLeft="6.0dip"
+		  android:layout_width="fill_parent" 
+		  android:layout_height="wrap_content"/>
+
+      <TextView
+          android:id="@id/worksheet_address"
+		  android:textColor="#000000"
+		  android:textSize="15.0sp"
+		  android:layout_weight="1"
+		  android:layout_marginRight="20dip"
+		  android:singleLine="true"
+		  android:text="123"
+		  android:paddingLeft="6.0dip"
+		  android:layout_width="fill_parent" 
+		  android:layout_height="wrap_content"/>
+          
+          
+      </LinearLayout>
+      
+		 
+  </LinearLayout>  
+  
+</LinearLayout>
+
+
+
+<!--  
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <LinearLayout 
+    			android:gravity="center"
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:weightSum="10">
+				<LinearLayout 
+				    android:orientation="vertical"
+					android:gravity="center"
+					android:layout_width="fill_parent" 
+					android:layout_weight="2" 
+					android:layout_height="wrap_content">
+        		    <TextView 
+					    android:id="@id/worksheet_text"
+					    android:textColor="#ffffff"
+					    android:layout_marginLeft="10dip"
+					    android:singleLine="true"
+					    android:layout_width="fill_parent" 
+					    android:layout_height="wrap_content"
+                        android:scrollHorizontally="true"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:focusableInTouchMode="true"  
+                        android:focusable="true"					    
+					/>
+
+        		    <TextView 
+					    android:id="@id/worksheet_content"
+					    android:textColor="#ffffff"
+					    android:layout_marginLeft="10dip"
+					    android:singleLine="true"
+					    android:paddingTop="4.0dip"
+					    android:layout_width="fill_parent" 
+					    android:layout_height="wrap_content"
+					/>
+        		    
+        		    <TextView 
+					    android:id="@id/worksheet_address"
+					    android:textColor="#ffffff"
+					    android:paddingTop="4.0dip"
+					    android:layout_marginLeft="10dip"
+					    android:singleLine="true"
+					    android:layout_width="fill_parent" 
+					    android:layout_height="wrap_content"
+                        android:scrollHorizontally="true"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:focusableInTouchMode="true"  
+                        android:focusable="true"					    
+					/>      		    		    		    				
+				</LinearLayout>
+				
+				<LinearLayout 
+					android:gravity="center"
+					android:layout_width="fill_parent" 
+					android:layout_weight="8" 
+					android:layout_height="fill_parent">
+					<CheckBox 
+					android:id="@id/worksheet_ckb" 
+					android:focusable="false"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content">
+					</CheckBox>
+				</LinearLayout>
+				
+	</LinearLayout>
+</LinearLayout>
+-->
+
+

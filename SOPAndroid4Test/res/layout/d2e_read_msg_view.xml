@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b0000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="80dip"
+        android:background="@layout/public_round"
+        android:orientation="vertical" >
+
+        <!-- includeli里必须指定layout_width,layout_height后才能设置margin值，不然不起作用 -->
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="35.0dip"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:layout_marginTop="1dip"
+            layout="@layout/public_icon_text_title" />
+        <!-- <TextView android:gravity="center_vertical" android:text="标题" android:id="@id/read_msg_title" android:paddingLeft="10.0dip" android:paddingTop="4.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/main_header_title" /> -->
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:focusable="true" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@id/msgcontentText"
+                    style="@style/text_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="6.0dip"
+                    android:paddingRight="6.0dip"
+                    android:text="111" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="42dip" >
+
+            <Button
+                android:id="@id/read_msg_btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="42.0dip"
+                android:layout_gravity="center"
+                android:background="@drawable/public_line"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/jj_sure"
+                android:textColor="#ffffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical"
+    android:layout_weight="1.0"
+    android:background="@drawable/login_bg"
+    android:scrollbarThumbVertical="@drawable/trans" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/panel_fly_insect_watch_first"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip" >
+
+            <!-- 现场勘察时发现的飞虫 -->
+
+            <RelativeLayout
+                android:id="@id/panel_fly_insect_watch_kind"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/public_line_top" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_fly_insect_watch_kind"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_fly_insect_watch_kind" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_fly_insect_watch_kind"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_fly_insect_watch_kind" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_fly_insect_watch_kind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_fly_insect_watch_kind"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 室内门窗、通道是否符合防飞虫要求1 -->
+
+            <RelativeLayout
+                android:id="@id/panel_fly_insect_watch_room_in_requ"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_mid" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_fly_insect_watch_room_in_requ"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_fly_insect_watch_room_in_requ" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_fly_insect_watch_room_in_requ"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_fly_insect_watch_room_in_requ" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_fly_insect_watch_room_in_requ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_fly_insect_watch_room_in_requ"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 室内垃圾是否暴露堆放2 -->
+
+            <RelativeLayout
+                android:id="@id/panel_fly_insect_room_in_rubb_bare"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_mid" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_fly_insect_room_in_rubb_bare"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_fly_insect_room_in_rubb_bare" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_fly_insect_room_in_rubb_bare"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_fly_insect_room_in_rubb_bare" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_fly_insect_room_in_rubb_bare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_fly_insect_room_in_rubb_bare"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 室内卫生间是否符合卫生标准3 -->
+
+            <RelativeLayout
+                android:id="@id/panel_fly_insect_room_in_hygiene_stan"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_mid" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_panel_fly_insect_room_in_hygiene_stan"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_panel_fly_insect_room_in_hygiene_stan" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_panel_fly_insect_room_in_hygiene_stan"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_panel_fly_insect_room_in_hygiene_stan" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_panel_fly_insect_room_in_hygiene_stan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_panel_fly_insect_room_in_hygiene_stan"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 室内地面、下水道有否积水 4-->
+
+            <RelativeLayout
+                android:id="@id/panel_fly_insect_room_in_hydrops"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_mid" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_fly_insect_room_in_hydrops"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_fly_insect_room_in_hydrops" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_fly_insect_room_in_hydrops"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_fly_insect_room_in_hydrops" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_fly_insect_room_in_hydrops"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_fly_insect_room_in_hydrops"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 室内进出通道、出入口有否门帘、风幕机、灭虫灯等设施 5-->
+
+            <RelativeLayout
+                android:id="@id/panel_fly_insect_room_in_has_equip"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_mid" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_fly_insect_room_in_has_equip"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_fly_insect_room_in_has_equip" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_fly_insect_room_in_has_equip"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_fly_insect_room_in_has_equip" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_fly_insect_room_in_has_equip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_fly_insect_room_in_has_equip"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 室外建筑周边有否垃圾、积水吸引飞虫 6-->
+
+            <RelativeLayout
+                android:id="@id/panel_fly_insect_room_out_rubb"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_mid" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_fly_insect_room_out_rubb"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_fly_insect_room_out_rubb" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_fly_insect_room_out_rubb"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_fly_insect_room_out_rubb" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_fly_insect_room_out_rubb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_fly_insect_room_out_rubb"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 室外建筑周边有否路灯、广告牌吸引飞虫 7-->
+
+            <RelativeLayout
+                android:id="@id/panel_fly_insect_room_out_light"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_mid"
+                android:gravity="center_vertical" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_fly_insect_room_out_light"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_fly_insect_room_out_light" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_fly_insect_room_out_light"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_fly_insect_room_out_light" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_fly_insect_room_out_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_fly_insect_room_out_light"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 环境保洁制度是否完善 8-->
+
+            <RelativeLayout
+                android:id="@id/panel_fly_insect_envir_syst_perf"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_mid"
+                android:gravity="center_vertical" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_fly_insect_envir_syst_perf"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_fly_insect_envir_syst_perf" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_fly_insect_envir_syst_perf"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_fly_insect_envir_syst_perf" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_fly_insect_envir_syst_perf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_fly_insect_envir_syst_perf"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 卫生设施是否符合防飞虫的要求 9-->
+
+            <RelativeLayout
+                android:id="@id/panel_fly_insect_equip_requ"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_mid"
+                android:gravity="center_vertical" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_fly_insect_equip_requ"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_fly_insect_equip_requ" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_fly_insect_equip_requ"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_fly_insect_equip_requ" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_fly_insect_equip_requ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_fly_insect_equip_requ"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+            <!-- 客户方生产流程有否飞虫入侵风险 10-->
+            
+            <RelativeLayout
+                android:id="@id/panel_fly_insect_pipeline_risk"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_mid"
+                android:gravity="center_vertical" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_fly_insect_pipeline_risk"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_fly_insect_pipeline_risk" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_fly_insect_pipeline_risk"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_fly_insect_pipeline_risk" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_fly_insect_pipeline_risk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_fly_insect_pipeline_risk"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+            
+            <!-- 客户方有否飞虫综合防制的理念 11-->
+
+            <RelativeLayout
+                android:id="@id/panel_fly_insect_prevention_think"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/public_line_bottom"
+                android:gravity="center_vertical" >
+
+                <com.mobilercn.widget.MarqueeTextView
+                    android:id="@id/tv_fly_insect_prevention_think"
+                    style="@style/mouse_watch_tv_style"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/tv_fly_insect_prevention_think" />
+
+                <AutoCompleteTextView
+                    android:id="@id/at_fly_insect_prevention_think"
+                    style="@style/at_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/tv_fly_insect_prevention_think" />
+                <!-- 下拉按钮 -->
+
+                <ImageButton
+                    android:id="@id/ibtn_fly_insect_prevention_think"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/at_fly_insect_prevention_think"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/more_select" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/panel_fly_insect_watch_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/panel_fly_insect_watch_first"
+            android:layout_marginBottom="4.0dip"
+			android:paddingLeft="10.0dip"
+			android:paddingRight="10.0dip"
+            android:layout_marginTop="10.0dp"
+            android:gravity="center" 
+            android:paddingBottom="20.0dip"
+            >
+
+            <Button
+                android:id="@id/btn_save_fly_insect_watch"
+                style="@style/place_data_coll_btn_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="40.0dip"
+                android:layout_weight="1"
+                android:background="@drawable/blue_public_line"
+                android:layout_marginRight="2.0dip"
+                android:text="@string/btn_save_fly_insect_watch" />
+			<!-- 	
+            <Button
+                android:id="@id/btn_reset_fly_insect_watch"
+                style="@style/place_data_coll_btn_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="40.0dip"
+                android:layout_weight="1"
+                android:background="@drawable/btn_add" 
+                android:text="@string/btn_reset_fly_insect_watch"
+                />
+			 -->
+            <Button
+                android:id="@id/btn_back_fly_insect_watch"
+                style="@style/place_data_coll_btn_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="40.0dip"
+                android:layout_weight="1"
+                android:background="@drawable/blue_public_line"
+                android:layout_marginLeft="2.0dip"
+                android:text="@string/btn_back_fly_insect_watch" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
